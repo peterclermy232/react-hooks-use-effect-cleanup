@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { clearInterval } from "timers";
 
 function Clock() {
   const [time, setTime] = useState(new Date());
@@ -10,7 +9,7 @@ function Clock() {
     }, 1000);
     // returning a cleanup function
     return function cleanup(){
-      clearInterval(timerId)
+      clearI
     }
   }, []);
 

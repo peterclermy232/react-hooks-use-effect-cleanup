@@ -10,7 +10,7 @@ function Clock() {
     }, 1000);
     // returning a cleanup function
     return function cleanup(){
-      clearInterval(timerId)
+      clearInterval(time)
     }
   }, []);
 
